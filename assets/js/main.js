@@ -50,12 +50,6 @@ $(document).ready(function () {
   });
 });
 
-// Loading
-// let loading = document.getElementById("loading");
-// window.addEventListener("load", () => {
-//   loading.style.display = "none";
-// });
-
-
-// // Aos
-// AOS.init();
+function toggleForm(){
+  document.body.classList.toggle('activeForm');
+}

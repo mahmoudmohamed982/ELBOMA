@@ -1,0 +1,38 @@
+.layout {
+    min-height: 10vh !important;
+    color: var(--white-color);
+
+  }
+
+  .content .underscool{
+    font-size: 1.5rem;
+    margin-right: 2%;
+    font-weight: bolder;
+  }
+
+
+
+.lines{
+    position: relative;
+    height: 45px;
+    width: 150px;
+}
+.lines::before{
+    content: '';
+    position: absolute;
+    width: 8rem;
+    height: 3px;
+  
+    background-color: var(--white-color);
+    top:45%;
+}
+
+.service-info{
+  
+ margin-top: -25px;
+ padding-bottom: 50px;
+}
+
+.service-details{
+    margin-bottom: 200px;
+}
