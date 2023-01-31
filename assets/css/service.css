@@ -12,11 +12,13 @@
 
 
 
-.lines{
+  .lines {
     position: relative;
     height: 45px;
-    width: 150px;
+    width: 160px;
+    margin: 0 12px 0 0;
 }
+
 .lines::before{
     content: '';
     position: absolute;

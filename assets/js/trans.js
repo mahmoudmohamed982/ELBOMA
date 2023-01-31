@@ -26,6 +26,7 @@ const translations = {
         footerLinks:"Footer Link",
         footerDesc:"A Small River Named Duden Flows By Their Place And Supplies It With The Necessary Regelialia.",
         OURSERVICES:"OUR SERVICES",
+        OURSERVICESDesc:"orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.        ",
         contact: "Contact us",
         contactDesc:"Sign-Up For Our Newsletter To Keep Up To Date With Our Community ",
         Name:"Name",
@@ -109,6 +110,7 @@ const translations = {
     }else{
         document.dir="ltr"
         document.body.style.textAlign ='left';
+        document.body.style.fontFamily='Poppins';
 
     };
   
