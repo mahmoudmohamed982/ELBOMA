@@ -12,6 +12,7 @@
 body {
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
+  /* font-family: 'Tajawal', sans-serif; */
 }
 li{
   list-style-type: none;
@@ -61,20 +62,45 @@ img {
   transition: 0.3s;
   border: none !important;
 }
+.lang-select{
+  border: none;
+  margin: 0 10px;
+}
+.lang-select:focus{
+  border: none;
 
+}
 /* contact overlay*/
 
 
 .overlay-contact .row{
   margin: 0 -15px  !important;
 }
+@media (max-width: 991.98px) {.contact-sections .col-12{
+  min-width: 300px;
+}
+
+.overlay-contact .row {
+  margin: 0px -56px !important;
+}
+.help h1{
+  font-size: 30px !important;
+}
+}
+
+.contact-big-section{
+  background-image: url(../images/bg-contact.png);
+}
 .contact-sections{
   background-color: #e6e7e8;
   padding: 0 !important;
   margin: 0;
 }
+
 .right-form{
-  background-image: url(../images/form-right.png);
+  background-image: url(../images/side-contact.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay-form {
@@ -91,13 +117,14 @@ img {
   overflow:hidden;
   box-sizing:border-box;
   transition: top 500ms ease-in-out,
-              opacity 500ms ease-in-out,
-              height 0ms ease-in-out 500ms;  
+         opacity 500ms ease-in-out, 
+         height 0ms ease-in-out 500ms;  
 }
+
 .close-btn {
   position: absolute;
-  top: 18%;
-  right: 181px;
+  top: 2.5%;
+  right: 110px;
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
@@ -110,11 +137,18 @@ img {
   border-radius: 50%;
 }
 
+@media (max-width: 991.98px) {.close-btn {
+  position: absolute;
+  right: 181px;
+
+}
+}
+
 body.activeForm .overlay-form {
   z-index:2;
   opacity:1;
   top:0px;
-  height:100vh;
+  height:830vh;
   transition: top 500ms ease-in-out,
               opacity 500ms ease-in-out,
               height 0ms ease-in-out 0ms;
@@ -220,7 +254,7 @@ body.activeForm .overlay-form {
 }
 .help h1 {
   color: var(--main-color);
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   padding: 40px;
   font-weight: 900;
@@ -298,6 +332,7 @@ body.activeForm .overlay-form {
 .Projects {
   min-height: 100vh;
   align-items: center;
+  background-color: #fefefe;
 }
 
 
@@ -439,8 +474,8 @@ body.activeForm .overlay-form {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: var(--main-color);
-  box-shadow: 2px 4px 6px 5px #3628b8ab;
-    border-radius: 10px;
+ border: 5px solid rgba(0, 0, 0, 0.5) ;
+ border-radius: 10px;
 }
 
 
@@ -493,6 +528,7 @@ location-section
 .contact-form{
   margin: 0 auto;
   max-width: 700px;
+  background-color: var(--white-color);
 }
  .input-bg{
   background-color: #efeff1;
