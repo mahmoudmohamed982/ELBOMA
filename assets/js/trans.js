@@ -10,14 +10,13 @@ const translations = {
 
         landDisc:"We Think Outside The Box But We Faster",
         btnView:"view",
-        servicesTitle1P1:"Services We Can Help You With ",
-        servicesTitle1P2:"Owl agenecy",
+        servicesTitle:"Services We Can Help You With <br/> Owl agenecy ",
         InterfaceTitle:"Interface Design",
         interfaceDesc:"Dolor Voluptate Aliquip Laborum Veniam Officia Sint Ipsum Magna Labore Eu Labore Tempor. Dolor Voluptate Aliquip Laborum Veniam Officia Sint Ipsum Magna Labore Eu Labore Tempor ",
         ourTeamHeader:"Our Team",
         teamMemb:"Braa Adnan",
         teamMembPOS:"UI UX Designer",
-        serviceLocationHead:"Services Location Of Owal Agency In Dubai",
+        serviceLocationHead:"Services Location Of Owal Agency In <br> Dubai",
         Dubai:"Dubai",
         timeOfWork:"From Monday To Saturday From 9 Am To 8 Pm",
         locOfAgancy:" Business Bay - Bay View Tower 18th ",
@@ -49,14 +48,13 @@ const translations = {
       landTitleP2: " الرقمية",
         landDisc:" نفكر خارج الصندوق لكننا أسرع",
         btnView:"معاينة",
-        servicesTitle1P1:" الخدمات التي يمكننا مساعدتك بها مع وكالة بومه" ,
-        servicesTitle1P2:"وكالة البومة",   
+        servicesTitle:"  الخدمات التي يمكننا مساعدتك بها مع <br>وكالة البومة" ,
          InterfaceTitle:"تصميم واجهة",
-        interfaceDesc:"  نحن مجموعه من المبرمجين ومحللي النظم والمصممين والمسوقين اجتمعنا لتقديم افضل الخدمات: من اجلك انت  ومحللي النظم والمصممين والمسوقين       ",
+        interfaceDesc:"  نحن مجموعه من المبرمجين ومحللي النظم والمصممين والمسوقين اجتمعنا لتقديم افضل الخدمات: من اجلك انت  ومحللي النظم والمصممين والمسوقين",
         ourTeamHeader:"فريقنا",
         teamMemb:"براء عدنان",
         teamMembPOS:"مصمم واجهات اماميه",
-        serviceLocationHead:" موقع خدمات وكالة البومه في دبي",
+        serviceLocationHead:" موقع خدمات وكالة البومه في <br> دبي",
         Dubai:"دبي",
         timeOfWork:"من الاثنين إلى السبت من الساعة 9 صباحًا حتى الساعة 8 مساءً",
         locOfAgancy:"الخليج التجاري - برج باي فيو 18",
@@ -73,7 +71,7 @@ const translations = {
         Name:"الأسم",
         ChooseService:"اختر الخدمة",
         serviceName:"أسم الخدمة",
-        CheckMe:"تحققني",
+        CheckMe:" اضغط للتحقق",
         yourMassage:"اكتب رسالتك",
         send:"ارسال",
 
@@ -96,7 +94,7 @@ const translations = {
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((element) => {
       const translationKey = element.getAttribute("data-i18n");
-      element.textContent = translations[language][translationKey];
+      element.innerHTML = translations[language][translationKey];
     });
     
     // document.dir = language === "ar" ? "rtl" : "ltr";

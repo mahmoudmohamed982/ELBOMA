@@ -166,7 +166,9 @@ body.activeForm .overlay-form {
 
 }
 
-
+.bg-light{
+  background-color: var(--white-color) !important;
+}
 .navbar-expand-lg .navbar-nav {
   margin: 0 left !important;
 }
@@ -253,15 +255,25 @@ body.activeForm .overlay-form {
 }
 .help h1 {
   color: var(--main-color);
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
-  padding: 40px;
+  padding:  20px 40px;
   font-weight: 900;
+  position: relative;
+  line-height: 4rem;
 }
-.help h1 span {
-  line-height: 1.25;
+.help h1::after{
+  content: "";
+  position: absolute;
   box-shadow: 0 -11px 0 var(--shadow-color) inset;
+  width: 20%;
+  height: 10px;
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
+
+
 
 .help .icon-img {
   text-align: center;
