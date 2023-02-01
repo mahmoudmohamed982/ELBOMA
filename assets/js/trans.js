@@ -59,7 +59,7 @@ const translations = {
         timeOfWork: "من الاثنين إلى السبت من الساعة 9 صباحًا حتى الساعة 8 مساءً",
         locOfAgancy: "الخليج التجاري - برج باي فيو 18",
         fOLLOWUS: "تابعنا",
-        footerLinksTtle: "التصنيفات",
+        footerLinksTitle: "الروابط ",
         footerLinks: "رابط دعم",
         footerDesc: "البومة للحلول الرقمية نفكر خارج الصندوق لكننا أسرع ونوفر خدمه متميزه ",
         OURSERVICES: "خدماتنا",
