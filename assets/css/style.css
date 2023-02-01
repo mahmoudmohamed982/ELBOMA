@@ -154,7 +154,7 @@ body.activeForm .overlay-form {
 
 .close-btn {
   position: fixed;
-  top: 17%;
+  top: 8%;
   right: 85px;
   font-size: 20px;
   font-weight: 500;
@@ -538,7 +538,7 @@ body.activeForm .overlay-form {
 /*../ end footer */
 
 /*all media query */
-@media (max-width: 991.98px) {
+@media (max-width: 776px) {
   .general-height h1 {
     font-size: 30px !important;
   }
@@ -547,26 +547,34 @@ body.activeForm .overlay-form {
     display: none;
   }
   .overlay-contact .row {
-    margin: 0px -56px !important;
+    margin: 0px -20px !important;
   }
   .close-btn {
     position: absolute;
-    right: 181px;
-  }
+    right: 44px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
   .btn-start {
     font-size: small;
   }
-  
-  .contact-sections .col-12 {
-    min-width: 300px;
+  .contact-sections .contact-desc{
+    display: none;
+  }
+  .contact-sections .contact-content {
+    max-width: 340px;
+    margin: 0 auto;
+    height: 180vw!important;
+    overflow: hidden;
+  }
+  textarea{
+    max-height: 50px;
+    margin-top: 5px;
   }
   .footer-logo img {
     width: 20%;
   }
 
-  .project .row .col-md-4 {
-    flex: 0 0 31.33333%;
-    max-width: 31.33333%;
-  }
+
 
 }
