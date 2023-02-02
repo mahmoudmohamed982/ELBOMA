@@ -83,6 +83,7 @@ const translations = {
 //  ======== translate=========
 // languageSelector function
 const languageSelector = document.querySelector("select");
+
 languageSelector.addEventListener("change", (event) => {
     setLanguage(event.target.value);
     localStorage.setItem("lang", event.target.value);
@@ -91,6 +92,8 @@ languageSelector.addEventListener("change", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     const language = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
     setLanguage(language);
+
+    
 });
 
 //   translate core function
@@ -104,10 +107,9 @@ const setLanguage = (language) => {
     // lang realted styles
     if (language === "ar") {
         document.dir = "rtl";
-        // body.style.textAlign = 'right';
         document.body.style.textAlign = 'right';
         document.body.style.fontFamily = 'Tajawal';
-
+        document.getElementById("select_ar").selected=true;
 
     } else {
         document.dir = "ltr"
