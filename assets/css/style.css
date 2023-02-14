@@ -263,6 +263,9 @@ body.activeForm .overlay-form {
   margin-bottom: 20px;
   padding: 15px 10px;
 }
+.services-sec-2  .icon-info  h6 img{
+  max-width: 50px;
+}
 .services-sec-2 .icon-info p {
   font-size: 14px;
   color: #808286;
